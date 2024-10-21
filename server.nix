@@ -6,7 +6,8 @@ let
     username = cfg.username;
   };
 
-  myMods = lib.attrValues (import ./mods.nix { inherit (pkgs) stdenv; });
+  #myMods = lib.attrValues (import ./mods.nix { inherit (pkgs) stdenv; });
+  myMods = null;
 in
 {
   options = {
@@ -28,7 +29,7 @@ in
       openFirewall = true;
       loadLatestSave = true;
       game-name = "Engineering Nerds Factorio Server";
-      description = "Factorio server for Daisy and Bluff";
+      description = "Factorio server for Losers";
       mods = myMods;
       package = package;
     };
