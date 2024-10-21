@@ -1,7 +1,7 @@
 {
   description = "Simple factorio server with nice to have mods";
   inputs = {
-    nixpkgs.url = "nixpkgs/nixos-unstable";
+    nixpkgs.url = "nixpkgs/master";
   };
   outputs = { self, nixpkgs, ... }:
     let
