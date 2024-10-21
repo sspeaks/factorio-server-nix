@@ -25,7 +25,7 @@ in
   config = lib.mkIf cfg.enable {
     services.factorio = {
       enable = true;
-      admins = [ "bloodfox" ];
+      admins = [ "bloodfox" "zimmy" ];
       openFirewall = true;
       loadLatestSave = true;
       game-name = "Engineering Nerds Factorio Server";
