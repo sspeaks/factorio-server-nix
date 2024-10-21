@@ -7,7 +7,6 @@ let
   };
 
   #myMods = lib.attrValues (import ./mods.nix { inherit (pkgs) stdenv; });
-  myMods = null;
 in
 {
   options = {
@@ -30,7 +29,6 @@ in
       loadLatestSave = true;
       game-name = "Engineering Nerds Factorio Server";
       description = "Factorio server for Losers";
-      mods = myMods;
       package = package;
     };
   };
