@@ -4,6 +4,7 @@ let
   package = pkgs.factorio-headless-experimental.override {
     token = cfg.token;
     username = cfg.username;
+    versionsJson = ./versions.json;
   };
 
   #myMods = lib.attrValues (import ./mods.nix { inherit (pkgs) stdenv; });
